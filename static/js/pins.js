@@ -568,8 +568,8 @@
             marker.imageLoaded = false;
             slowlyFadeIn(marker);
             marker.addListener('click', function () {
-                var baseURL = 'https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&pageids=';
-                var baseImageURL = "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=pageimages&pithumbsize=350&pageids=";
+                var baseURL = 'https://mr.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&pageids=';
+                var baseImageURL = "https://mr.wikipedia.org/w/api.php?format=json&action=query&prop=pageimages&pithumbsize=350&pageids=";
                 infowindow.setContent(contentString);
                 //noinspection JSCheckFunctionSignatures
                 infowindow.open(map, this);
