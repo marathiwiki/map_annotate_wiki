@@ -31,7 +31,7 @@ class WikiInfoDAO:
 
         return_list = []
 
-        url = "https://en.wikipedia.org/w/api.php?" + \
+        url = "https://mr.wikipedia.org/w/api.php?" + \
               "action=query" + \
               "&list=geosearch" + \
               "&gsradius=" + str(wiki_filter.radius) + \
@@ -50,7 +50,7 @@ class WikiInfoDAO:
                 wiki_dto = WikiInfoDTO.WikiInfoDTO()
                 wiki_dto.location = Location.Location(article_dict['lat'], article_dict['lon'])
                 wiki_dto.title = article_dict['title']
-                wiki_dto.link = "https://en.wikipedia.org/?curid=" + str(article_dict['pageid'])
+                wiki_dto.link = "https://mr.wikipedia.org/?curid=" + str(article_dict['pageid'])
                 wiki_dto.info = ""
                 wiki_dto.pageid = str(article_dict['pageid'])
                 return_list.append(wiki_dto)
